@@ -1,0 +1,44 @@
+{
+  "personas": [
+    {
+      "nombre": "Fernando Pérez del Corral",
+      "trabajo": "entrenador",
+      "id": 1
+    },
+    {
+      "nombre": "Valentina Laverde Jimenez",
+      "trabajo": "deportista",
+      "id": 2
+    },
+    {
+      "nombre": "Sara Teresa Sánchez del Pinar",
+      "trabajo": "deportista",
+      "id": 3
+    },
+    {
+      "nombre": "Efraín de las Casas Mejía",
+      "trabajo": "entrenador",
+      "id": 4
+    },
+    {
+      "nombre": "Julieta Ponce de León",
+      "trabajo": "entrenador",
+      "id": 5
+    },
+    {
+      "nombre": "Martín Elías de los Ríos Acosta",
+      "trabajo": "deportista",
+      "id": 6
+    },
+    {
+      "nombre": "Sebastián del Campo Yepes",
+      "trabajo": "deportista",
+      "id": 7
+    },
+    {
+      "nombre": "Ana María de la Peña Posada",
+      "trabajo": "entrenador",
+      "id": 8
+    }
+  ]
+}

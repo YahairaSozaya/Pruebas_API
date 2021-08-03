@@ -1,0 +1,246 @@
+/*AJUSTES GENERALES*/
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding:70px 0 0 100px;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 10% 15% 40% 35%;
+    align-items: flex-start;
+    justify-content:flex-start;
+    background-image: url("./images/fondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(50%);
+    overflow: hidden;
+}
+
+h1{
+    color:white;
+}
+
+/*TITULOS DE LA TABLA*/
+.informacion_listaTitulos{
+    width: 500px;
+    height: 40px;
+    background-color: rgb(111, 112, 117);
+    display:grid;
+    grid-template-columns: 50% 30% 20%;
+    margin-top: 30px;
+    padding:0 20px 0 20px;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.tituloTabla{
+    margin: 0px;
+    color:rgb(234, 234, 238);
+    font-weight: bold;
+}
+
+/*CAJA DE INFORMACION*/
+.informacion_listaPersonas{
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    display:grid;
+    grid-template-columns: 50% 30% 20%;
+    padding:10px 20px 20px 20px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.nombres{
+    margin:0px;
+    width:100%;
+    height:24px;
+    border: none;
+}
+
+
+.botones_datos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width:100%;
+    height: 24px;
+    justify-content: center;
+}
+
+
+/*CAJA DE FORMULARIO NUEVO*/
+.contenedor_NuevaPersona{
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+    margin-top:30px;
+    margin-bottom:80px;
+}
+
+input{
+    padding:10px;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border:none;
+    margin-bottom: 10px ;
+    outline: none;
+}
+
+.opciones_personasNuevo{
+    color:white;
+}
+
+
+/*FORMULARIO DE DATOS A ACTUALIZAR*/
+.formulario_actualizar{
+    position: absolute;
+    width: 450px;
+    top:190px;
+    height: 200px;
+    margin-left: 700px;
+    background-color: cornsilk;
+    padding:20px;
+    display: none;
+    box-shadow: 2px 2px 2px #343434;
+    border-radius: 10px;
+}
+
+.actualizar_titulo{
+    margin-top: 0px;
+}
+
+.opciones_personasTitulo{
+    margin:0px;
+    font-size: 15px;
+}
+
+/*CONFIRMAR BORRADO*/
+.confirmar{
+    text-align: center;  
+}
+
+.si, .no{
+    border:none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color:white;
+}
+
+.si{
+    background-color: rgb(117, 202, 31);
+}
+
+.no{
+    background-color:rgba(223, 53, 30, 0.842);
+}
+
+/*BOTONES*/
+.crear, 
+.guardar,
+.eliminar,
+.actualizar,
+.cancelar{
+    border-radius: 8px;
+    color:white;
+    border: none;
+    margin:2px 0 2px 0;
+    height: 20px;
+}
+
+.crear, 
+.guardar,
+.cancelar{
+    width: 90px;
+    border-radius: 8px;
+    color:white;
+    border: none;
+    margin:2px 0 2px 0;
+    height: 20px;
+}
+
+.actualizar,
+.eliminar{
+    width: 40px;
+}
+
+.crear:active,
+.guardar:active,
+.eliminar:active, 
+.actualizar:active,
+.cancelar:active, 
+.si:active, .no:active{
+   animation:boton 0.2s;
+}
+
+.crear, .guardar{
+    background-color: rgb(117, 202, 31);   
+}
+
+.cancelar{
+    background-color:rgba(223, 53, 30, 0.842);
+}
+
+.eliminar, 
+.actualizar{
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position:center;
+    cursor: pointer;
+}
+
+.eliminar{
+    background-image: url("./images/eliminar.png");
+}
+
+.actualizar{
+    background-image: url("./images/editar.png");
+}
+
+@keyframes boton{
+    50%{
+        transform: translateY(5px);
+    }
+
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+/*GRID FORMULARIOS DE INPUT RADIO, ELECCION DE OPCIONES*/
+.nueva_persona{
+    display:grid;
+    width: 50%;
+    grid-template-columns:30% 20% 30% 20%;
+    align-items: center;
+}
+
+.opciones_personas{
+    display:grid;
+    width: 80%;
+    grid-template-columns:30% 20% 30% 20%;
+    align-items: center;
+}
+
+/*INPUT DE DATOS A ACTUALIZAR Y NUEVO*/
+.opciones_personas input, .nueva_persona input{
+    width: 15px;
+    margin:0px;
+}
+
+

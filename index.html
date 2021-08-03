@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica apis</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body id="body">
+    <h1>Registro de usuarios por roles--Inscripcion</h1>
+    <!--DATOS DE LAS PERSONAS, PIZARRA DE DATOS-->
+    <div class="informacion_listaTitulos">
+        <p class="tituloTabla">NOMBRES</p>
+        <p class="tituloTabla">OCUPACION</p>
+        <p class="tituloTabla">ACCIONES</p>
+    </div>
+    <div id="impresion" class="informacion_listaPersonas">
+        <div id="nombre_persona" class="nombre_persona"></div>
+        <div id="trabajo_persona" class="trabajo_persona"></div>
+        <div id="botones_datos" class="botones_datos"></div>
+    </div>
+
+    <!--FORMULARIO OCULTO DE ACTUALIZACION-->
+    <div id="formulario_actualizar" class="formulario_actualizar">
+        <p class="actualizar_titulo">ACTUALIZAR DATOS</p>
+        <input id="nombre_actualizado" type="text" placeholder="nombre">
+        <form id="opciones_personas" class="opciones_personas" name="opcion_choice">
+            <p class="opciones_personasTitulo">Entrenador</p>
+            <input type="radio" value="entrenador" name="opcion" checked>
+            <p class="opciones_personasTitulo">Deportista</p>
+            <input type="radio" value="deportista" name="opcion">    
+        </form>
+        <div>
+            <button id="guardar" class="guardar">Guardar</button>
+            <button id="cancelar" class="cancelar">Cancelar</button>
+        </div>
+    </div>
+
+    <!--CONFIRMAR ELIMINAR-->
+    <div id="confirma_eliminar" class="formulario_actualizar">
+        <p class="confirmar">¿Estás seguro que quiers eliminar?</p>
+        <div class="confirmar">
+            <button id="si" class="si">SI</button>
+            <button id="no" class="no">NO</button>
+        </div>
+    </div>
+
+    <!--FORMULARIO PARA AGREGAR NUEVA PERSONA-->
+    <div class="contenedor_NuevaPersona">
+        <input id="input" type="text" placeholder="nombre_persona" name="nombre_persona">
+        <form class="nueva_persona" name="opcion_nueva">
+            <p class="opciones_personasNuevo">Entrenador</p>
+            <input type="radio" value="entrenador" name="opcion_personaNueva" checked>
+            <p class="opciones_personasNuevo">Deportista</p>
+            <input type="radio" value="deportista" name="opcion_personaNueva">    
+        </form>
+        <button id="crear" class="crear">CREAR</button>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
